@@ -1,0 +1,22 @@
+.si-icons span {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin: 10px 15px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.si-icons-hover span {
+	width: 128px;
+	height: 128px;
+	margin: 50px 40px;
+}
+
+/* Fallback for browsers that don't support SVG - Generated with http://iconizr.com/ */
+
+.no-svg .si-icon-hamburger, .no-svg .si-icon-hamburger-cross { background-image: url('../png/hamburger.png') }
+
+
+/* alternatively you can define that there is no background image when SVG is supported instead of using .no-svg */
