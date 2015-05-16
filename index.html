@@ -2,8 +2,6 @@
 layout: default
 ---
 
-
-
 <div class="nav-wrapper">
   <div class="si-icons si-icons-default">
     <span class="si-icon si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span>
@@ -11,13 +9,21 @@ layout: default
   </div>
 </div>
 
-<div class="hero">
-  {% include _hero-svg.html %}
+<div class="container">
+  <ul id="scene" class="scene">
+    <li class="layer guitar" data-depth="1.00"><img src="img/guitar.png"></li>
+    <li class="layer banner" data-depth="0.80"><img src="img/banner.png"></li>
+    <li class="layer jon" data-depth="0.60"><img src="img/jon.png"></li>
+    <li class="layer left-rose" data-depth="0.40"><img src="img/left-rose.png"></li>
+    <li class="layer right-rose" data-depth="0.20"><img src="img/right-rose.png"></li>
+    <li class="layer baptists" data-depth="0.00"><img src="img/baptists.png"></li>
+  </ul>
 </div>
 
 <!-- SCRIPTS -->
 <script src="js/svgicons-config.js"></script>
 <script src="js/svgicons.js"></script>
+<script src="js/parallax.js"></script>
 <script>
   (function() {
     // initialize all
@@ -30,4 +36,11 @@ layout: default
     new svgIcon( document.querySelector( '.si-icons-easing .si-icon-plus' ), svgIconConfig, { easing : mina.backin } );
 
   })();
+</script>
+<script>
+
+// Pretty simple huh?
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
+
 </script>
