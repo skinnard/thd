@@ -1,46 +1,18 @@
 ---
 layout: default
 ---
-
-<div class="nav-wrapper">
-  <div class="si-icons si-icons-default">
-    <span class="si-icon si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span>
-    <h1>MENU</h1>
+<div class="hero-wrapper">
+  <div class="container">
+    <ul id="scene" class="scene">
+      <li class="layer guitar" data-depth="0.10"><img src="img/guitar.png"></li>
+      <li class="layer banner-left" data-depth="0.20"><img src="img/banner-left.png"></li>
+      <li class="layer banner-right" data-depth="0.20"><img src="img/banner-right.png"></li>
+      <li class="layer banner" data-depth="0.20"><img src="img/banner.png"></li>
+      <li class="layer jon" data-depth="0.40"><img src="img/jon.png"></li>
+      <li class="layer left-rose" data-depth="0.40"><img src="img/left-rose.png"></li>
+      <li class="layer right-rose" data-depth="0.40"><img src="img/right-rose.png"></li>
+      <li class="layer baptists" data-depth=".10"><img src="img/baptists.png"></li>
+      <li class="layer roses" data-depth=".10"><img src="img/roses.png"></li>
+    </ul>
   </div>
 </div>
-
-<div class="container">
-  <ul id="scene" class="scene">
-    <li class="layer guitar" data-depth="0.10"><img src="img/guitar.png"></li>
-    <li class="layer banner" data-depth="0.20"><img src="img/banner.png"></li>
-    <li class="layer jon" data-depth="0.40"><img src="img/jon.png"></li>
-    <li class="layer left-rose" data-depth="0.30"><img src="img/left-rose.png"></li>
-    <li class="layer right-rose" data-depth="0.20"><img src="img/right-rose.png"></li>
-    <li class="layer baptists" data-depth=".10"><img src="img/baptists.png"></li>
-  </ul>
-</div>
-
-<!-- SCRIPTS -->
-<script src="js/svgicons-config.js"></script>
-<script src="js/svgicons.js"></script>
-<script src="js/parallax.js"></script>
-<script>
-  (function() {
-    // initialize all
-
-    [].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
-      var svgicon = new svgIcon( el, svgIconConfig );
-    } );
-
-    new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger' ), svgIconConfig, { easing : mina.backin } );
-    new svgIcon( document.querySelector( '.si-icons-easing .si-icon-plus' ), svgIconConfig, { easing : mina.backin } );
-
-  })();
-</script>
-<script>
-
-// Pretty simple huh?
-var scene = document.getElementById('scene');
-var parallax = new Parallax(scene);
-
-</script>

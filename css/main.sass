@@ -3,54 +3,79 @@
 ---
 @charset "utf-8"
 
-
 // Import partials from `sass_dir` (defaults to `_sass`)
+
 @import "all-styles"
 
-
 body
-  background-color: black
+  background: black
+
+h1
+  color: white
+  float: right
+  margin: 12px 40px 0 0
+  font:
+    family: 'sedgwick_coregular', Arial, sans-serif
+    size: 1.3em
 
 .nav-wrapper
   position: absolute
   right: 0
   top: 20px
 
-  h1
-    color: white
-    float: right
-    margin: 12px 40px 0 0
-    font:
-      family: 'sedgwick_coregular', Arial, sans-serif
-      size: 1.3em
-
-.container
+.hero-wrapper
   position: relative
-  max-width: 600px
-  margin: 0 auto
-  padding: 5%
 
-  .scene
-    padding: 0
-    margin: 0
+  .container
+    max-width: 600px
+    margin: -20px auto 0
+    padding: 5%
+    height: 600px
 
-    .guitar
-      top: 0px
+    .scene
+      padding: 0
+      margin: 0
 
-    .banner
-      top: 140px
-      left: 40px
+      .guitar
+        top: 0px
+        right: 50%
+        left: 20px
 
-    .jon
-      top: 220px
-      left: 70px
+      .banner
+        top: 140px
+        right: 50%
+        left: 65px
 
-    .left-rose
-      top: 250px
+      .jon
+        right: 50%
+        left: 115px
 
-    .right-rose
-      top: 250px
-      left: 320px
+      .left-rose
+        top: 250px
 
-    .baptists
-      top: 355px
+      .right-rose
+        top: 250px
+        left: 320px
+
+      .baptists
+        top: 355px
+
+      .roses
+        top: 500px
+        right: 50%
+        left: 80px
+
+      .banner-left
+        top: 0
+        left: 0
+
+      .banner-right
+        top: 0
+        right: 0
+
+.site-footer
+  height: 50px
+  background: pink
+  position: absolute
+  bottom: 0
+  width: 100%
