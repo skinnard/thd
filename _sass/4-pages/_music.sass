@@ -5,9 +5,6 @@ button, input
   &:focus
     outline: none
 
-.music-wrapper
-  text-align: center
-
 .clearfix
   clear: both
 
@@ -16,7 +13,16 @@ button, input
   min-height: 400px
   background: url('../../img/music-player-bg.gif')
   overflow: auto
-  margin: 60px auto
+  margin: 140px auto
+  text-align: center
+
+  h1
+    color: #FFF
+    font-family: $base-font
+    text-align: center
+    font-size: 3em
+    position: absolute
+    top: 0
 
 #audio-info
   text-align: center
@@ -120,6 +126,8 @@ input#volume::-webkit-slider-thumb
     height: 4px
     left: 45px
     top: 0
+
+
 
   // #duration
   //   position: absolute

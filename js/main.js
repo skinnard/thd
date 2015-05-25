@@ -113,24 +113,44 @@ $('#volume').change(function(){
   audio.volume = parseFloat(this.value / 10);
 });
 
-// Allow for click on song titles to start playing
+
+// Menu Functionality
+$( ".section" ).hide();
+$( ".hero-wrapper").show();
+// Home Page
+$( "#home" ).click(function( event ) {
+  $( '.section' ).hide();
+  $( '.hero-wrapper' ).show();
+});
+// About Page
+$( "#about" ).click(function( event ) {
+  $( '.section' ).hide();
+  $( '#about-container' ).show();
+
+});
+// Music Page
+$( "#music" ).click(function( event ) {
+  $( '.section' ).hide();
+  $( '.music-wrapper' ).show();
+});
+// Music Page
+$( "#pics" ).click(function( event ) {
+  $( '.section' ).hide();
+  $( '.pictures-wrapper' ).show();
+});
+// Music Page
+$( "#contact" ).click(function( event ) {
+  $( '.section' ).hide();
+  $( '#contact-container' ).show();
+});
+
+// Add active state to navigation
 var selector = 'nav-list li';
 
 $(selector).on('click', function(){
     $(selector).removeClass('active');
     $(this).addClass('active');
 });
-
-
-
-
-
-
-
-
-
-
-
 
 
 }); //END OF DOC READY
