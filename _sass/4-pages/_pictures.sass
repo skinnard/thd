@@ -1,0 +1,14 @@
+.pic-1, .pic-2, .pic-3, .pic-4, .pic-5, .pic-6, .pic-7, .pic-8, .pic-9
+
+#pictures-wrapper
+  +outer-container
+  $mobile: new-breakpoint(max-width 500px 2)
+
+  a
+    +span-columns(4)
+    padding: 30px
+    +media($mobile)
+      +span-columns(2)
+
+  img
+    width: 150px

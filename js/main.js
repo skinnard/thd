@@ -1,6 +1,18 @@
 
 $(document).ready(function() {
 
+// Hero paralax script
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
+
+// Snap.svg initalizing script
+(function() {
+
+  [].slice.call(document.querySelectorAll('.si-icons-default > .si-icon')).forEach(function(el) {
+    var svgicon = new svgIcon(el, svgIconConfig);
+  });
+
+})();
 
 //Open menu when hamburger or menu title is clicked
 $( "#nav-title" ).click(function() {
@@ -136,7 +148,7 @@ $( "#music" ).click(function( event ) {
 // Music Page
 $( "#pics" ).click(function( event ) {
   $( '.section' ).hide();
-  $( '.pictures-wrapper' ).show();
+  $( '#pictures-wrapper' ).show();
 });
 // Music Page
 $( "#contact" ).click(function( event ) {
@@ -145,12 +157,31 @@ $( "#contact" ).click(function( event ) {
 });
 
 // Add active state to navigation
-var selector = 'nav-list li';
+var selector = '#nav-list li';
 
 $(selector).on('click', function(){
     $(selector).removeClass('active');
     $(this).addClass('active');
 });
 
+/* Fancy Box */
+
+$("a#single_image").fancybox();
+
+/* Using custom settings */
+
+$("a#inline").fancybox({
+  'hideOnContentClick': true
+});
+
+/* Apply fancybox to multiple items */
+
+$("a.group").fancybox({
+  'transitionIn'	:	'elastic',
+  'transitionOut'	:	'elastic',
+  'speedIn'		:	600,
+  'speedOut'		:	200,
+  'overlayShow'	:	false
+});
 
 }); //END OF DOC READY
