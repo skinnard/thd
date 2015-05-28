@@ -1,20 +1,8 @@
 
 // Our variables
+
 $base-font: 'lullabyregular', Arial, sans-serif;
 $second-font: 'Slabo 27px', serif;
 
-/* $spacing-unit:     30px;
-
-$text-color:       #fff;
-$background-color: #000;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px; */
+$mobile: new-breakpoint(max-width 500px);
+$tablet: new-breakpoint(max-width 800px);

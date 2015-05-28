@@ -1,115 +1,138 @@
 ---
 layout: default
 ---
-<div class="hero-wrapper section">
-  <div class="container">
-    <ul id="scene" class="scene">
-      <li class="layer guitar" data-depth="0.10">
-        <img src="img/guitar.png">
-      </li>
-      <li class="layer banner-left" data-depth="0.20">
-        <img src="img/banner-left.png">
-      </li>
-      <li class="layer banner-right" data-depth="0.20">
-        <img src="img/banner-right.png">
-      </li>
-      <li class="layer banner" data-depth="0.20">
-        <img src="img/banner.png">
-      </li>
-      <li class="layer jon" data-depth="0.50">
-        <img src="img/jon.png">
-      </li>
-      <li class="layer left-rose" data-depth="0.40">
-        <img src="img/left-rose.png">
-      </li>
-      <li class="layer right-rose" data-depth="0.40">
-        <img src="img/right-rose.png">
-      </li>
-      <li class="layer baptists" data-depth="0.20">
-        <img src="img/baptists.png">
-      </li>
-      <li class="layer roses" data-depth=".10">
-        <img src="img/roses.png">
-      </li>
-    </ul>
-  </div>
-</div>
-<!-- END OF MAIN PAGE -->
 
-<!-- START Of ABOUT PAGE -->
-<div id="about-page">
-  <div id="about-container" class="section">
-    <h1>We are the best band ever.</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, voluptas voluptatem. Est quod eum, ea neque quas dicta ipsum dolores laborum expedita dolor voluptatem itaque consequatur unde. Rerum, sint, consequatur.</p>
-  </div>
-</div>
-<!-- END OF ABOUT PAGE -->
-
-<!-- START OF MUSIC PAGE -->
-
-<div class="music-wrapper section">
-  <h1>Have a listen!</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-  <div id="audio-player">
-    <div id="audio-info">
-      <span class="title"></span>
+<div id="main-wrapper">
+  <div class="hero-wrapper section">
+    <div class="container">
+      <ul id="scene" class="scene">
+        <li class="layer guitar" data-depth="0.10">
+          <img src="img/guitar.png">
+        </li>
+        <li class="layer banner-left" data-depth="0.20">
+          <img src="img/banner-left.png">
+        </li>
+        <li class="layer banner-right" data-depth="0.20">
+          <img src="img/banner-right.png">
+        </li>
+        <li class="layer banner" data-depth="0.20">
+          <img src="img/banner.png">
+        </li>
+        <li class="layer jon" data-depth="0.50">
+          <img src="img/jon.png">
+        </li>
+        <li class="layer left-rose" data-depth="0.40">
+          <img src="img/left-rose.png">
+        </li>
+        <li class="layer right-rose" data-depth="0.40">
+          <img src="img/right-rose.png">
+        </li>
+        <li class="layer baptists" data-depth="0.20">
+          <img src="img/baptists.png">
+        </li>
+        <li class="layer roses" data-depth=".10">
+          <img src="img/roses.png">
+        </li>
+      </ul>
     </div>
-    <input type="range" id="volume" min="0" max="10" value="5">
-    <div id="audio-buttons">
-      <button id="prev"></button>
-      <button id="play"></button>
-      <button id="pause"></button>
-      <button id="stop"></button>
-      <button id="next"></button>
+  </div>
+  <!-- END OF MAIN PAGE -->
+
+  <!-- START Of ABOUT PAGE -->
+  <div id="about-page">
+    <div id="about-container" class="section">
+      <h1>We are the best band ever.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, voluptas voluptatem. Est quod eum, ea neque quas dicta ipsum dolores laborum expedita dolor voluptatem itaque consequatur unde. Rerum, sint, consequatur.</p>
     </div>
-    <div class="clearfix"></div>
-    <div id="tracker">
-      <div id="progress-bar">
-        <span id="progress"></span>
+  </div>
+  <!-- END OF ABOUT PAGE -->
+
+  <!-- START OF MUSIC PAGE -->
+
+  <div class="music-wrapper section">
+    <h1>Have a listen!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+    <div id="audio-player">
+      <div id="audio-info">
+        <span class="title"></span>
       </div>
-      <!-- <span id="duration"></span> -->
+      <input type="range" id="volume" min="0" max="10" value="5">
+      <div id="audio-buttons">
+        <button id="prev"></button>
+        <button id="play"></button>
+        <button id="pause"></button>
+        <button id="stop"></button>
+        <button id="next"></button>
+      </div>
+      <div class="clearfix"></div>
+      <div id="tracker">
+        <div id="progress-bar">
+          <span id="progress"></span>
+        </div>
+        <!-- <span id="duration"></span> -->
+      </div>
+      <div class="clearfix"></div>
+      <ul id="playlist">
+        <li song="life.mp3" title="Life's Suckin' the Life Outta Me">Life's Suckin' the Life Outta Me</li>
+        <li song="bad-romance.mp3" title="Bad Romance">Bad Romance</li>
+        <li song="whiskyandwomen.mp3" title="Whisky &amp; Women">Whisky &amp; Women</li>
+        <li song="washeduppreacherman.mp3" title="Washed Up Preacher Man">Washed Up Preacher Man</li>
+        <li song="justcantgetenough.mp3" title="I Just Can't Get Enough">I Just Can't Get Enough</li>
+      </ul>
     </div>
-    <div class="clearfix"></div>
-    <ul id="playlist">
-      <li song="life.mp3" title="Life's Suckin' the Life Outta Me">Life's Suckin' the Life Outta Me</li>
-      <li song="bad-romance.mp3" title="Bad Romance">Bad Romance</li>
-      <li song="whiskyandwomen.mp3" title="Whisky &amp; Women">Whisky &amp; Women</li>
-      <li song="washeduppreacherman.mp3" title="Washed Up Preacher Man">Washed Up Preacher Man</li>
-      <li song="justcantgetenough.mp3" title="I Just Can't Get Enough">I Just Can't Get Enough</li>
-    </ul>
   </div>
-</div>
-<!-- END OF MUSIC PAGE -->
+  <!-- END OF MUSIC PAGE -->
 
-<!-- START OF PICTURES PAGE -->
-<div id="pictures-page">
-  <div id="pictures-wrapper" class="section">
-      <a id="single_image" class="pic-1" href="img/band.jpg"><img src="img/band-small.jpg" alt=""/></a>
-      <a id="single_image" class="pic-2" href="img/band.jpg"><img src="img/band-small.jpg" alt=""/></a>
-      <a id="single_image" class="pic-3" href="img/band.jpg"><img src="img/band-small.jpg" alt=""/></a>
-      <a id="single_image" class="pic-4" href="img/band.jpg"><img src="img/band-small.jpg" alt=""/></a>
-      <a id="single_image" class="pic-5" href="img/band.jpg"><img src="img/band-small.jpg" alt=""/></a>
-      <a id="single_image" class="pic-6" href="img/band.jpg"><img src="img/band-small.jpg" alt=""/></a>
-      <a id="single_image" class="pic-7" href="img/band.jpg"><img src="img/band-small.jpg" alt=""/></a>
-      <a id="single_image" class="pic-8" href="img/band.jpg"><img src="img/band-small.jpg" alt=""/></a>
-      <a id="single_image" class="pic-9" href="img/band.jpg"><img src="img/band-small.jpg" alt=""/></a>
+  <!-- START OF PICTURES PAGE -->
+  <div id="pictures-page">
+    <div id="pictures-wrapper" class="section">
+      <h1 id="pictures-title">Take a look at our beautiful faces</h1>
+      <a id="single_image" class="pic-1" href="img/band.jpg">
+        <img src="img/band-small.jpg" alt="" />
+      </a>
+      <a id="single_image" class="pic-2" href="img/band.jpg">
+        <img src="img/band-small.jpg" alt="" />
+      </a>
+      <a id="single_image" class="pic-3" href="img/band.jpg">
+        <img src="img/band-small.jpg" alt="" />
+      </a>
+      <a id="single_image" class="pic-4" href="img/band.jpg">
+        <img src="img/band-small.jpg" alt="" />
+      </a>
+      <a id="single_image" class="pic-5" href="img/band.jpg">
+        <img src="img/band-small.jpg" alt="" />
+      </a>
+      <a id="single_image" class="pic-6" href="img/band.jpg">
+        <img src="img/band-small.jpg" alt="" />
+      </a>
+      <a id="single_image" class="pic-7" href="img/band.jpg">
+        <img src="img/band-small.jpg" alt="" />
+      </a>
+      <a id="single_image" class="pic-8" href="img/band.jpg">
+        <img src="img/band-small.jpg" alt="" />
+      </a>
+      <a id="single_image" class="pic-9" href="img/band.jpg">
+        <img src="img/band-small.jpg" alt="" />
+      </a>
+    </div>
   </div>
+  <!-- END OF PICTURES PAGE -->
 
-</div>
-<!-- END OF PICTURES PAGE -->
-
-<!-- START OF CONTACT PAGE -->
-<div id="contact-page">
-  <div id="contact-container" class="section">
-    <h1>Give Us A Shout</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <form action="//formspree.io/glenrhodges@gmail.com"
-      method="POST">
-    <input id="name" type="text" placeholder="name" name="name">
-    <input id="email" type="email" placeholder="email"  name="_replyto">
-    <textarea id="textarea" placeholder="message" name="comments" COLS=40 ROWS=6></TEXTAREA>
-    <input id="send" type="submit" value="Send">
-</form>
+  <!-- START OF CONTACT PAGE -->
+  <div id="contact-page">
+    <div id="contact-container" class="section">
+      <h1>Give Us A Shout</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <form action="//formspree.io/glenrhodges@gmail.com" method="POST">
+        <input id="name" type="text" placeholder="name" name="name">
+        <input id="email" type="email" placeholder="email" name="_replyto">
+        <textarea id="textarea" placeholder="message" name="comments" COLS=40 ROWS=6>
+        </TEXTAREA>
+        <input id="send" type="submit" value="Send">
+      </form>
+    </div>
   </div>
+  <!-- END OF CONTACT PAGE -->
+  <div class="push"></div>
 </div>
-<!-- END OF CONTACT PAGE -->
+<!-- END OF MAIN WRAPPER -->

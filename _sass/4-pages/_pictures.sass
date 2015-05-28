@@ -1,14 +1,25 @@
-.pic-1, .pic-2, .pic-3, .pic-4, .pic-5, .pic-6, .pic-7, .pic-8, .pic-9
+
 
 #pictures-wrapper
   +outer-container
-  $mobile: new-breakpoint(max-width 500px 2)
+  max-width: 485px
+  margin-top: 30px
+  text-align: center
 
   a
     +span-columns(4)
-    padding: 30px
+    margin: 0
+    padding: 0px
     +media($mobile)
-      +span-columns(2)
+      +span-columns(12)
 
   img
     width: 150px
+    width: 85%
+
+h1
+  font:
+    family: $base-font
+    size: 3em
+  color: white
+  text-align: center
