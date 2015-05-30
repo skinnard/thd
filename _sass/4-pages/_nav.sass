@@ -1,0 +1,40 @@
+.nav-wrapper
+  position: absolute
+  right: 20px
+  top: 20px
+  z-index: 200
+  float: right
+
+#nav-title
+  color: #FFF
+  float: right
+  margin: -5px 10px 0 0
+  font:
+    family: $base-font
+    size: 2em
+  cursor: pointer
+
++media($tablet)
+  .nav-wrapper
+    position: relative
+    top: 25px
+    width: 100%
+
+#nav-list
+  font:
+    family: $base-font
+    size: 1.3em
+  list-style: none
+  color: #FFF
+  margin: -10px 0 0
+  padding-left: 65px
+  line-height: 1.7
+  display: none
+  cursor: pointer
+
+
+  li
+    opacity: 0.5
+
+  .active
+    opacity: 1
