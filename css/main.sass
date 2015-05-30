@@ -10,22 +10,24 @@
 *
   margin: 0
 
+body
+  background: black
+  overflow: scroll
+
 html, body
   height: 100%
 
 #main-wrapper
   min-height: 100%
-  height: auto !important
-  height: 100%
-  margin: 0 auto -4em
+  /* equal to footer height */
+  margin-bottom: -142px
 
-.site-footer, .push
-  height: 4em
-  background: pink
+.main-wrapper:after
+  content: ""
+  display: block
 
-body
-  background: black
-  overflow: scroll
+.site-footer, .main-wrapper:after
+  height: 142px
 
 .active
   opacity: 1
