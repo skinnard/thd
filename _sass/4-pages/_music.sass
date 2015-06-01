@@ -12,7 +12,7 @@ button, input
   width: 300px
   min-height: 400px
   overflow: auto
-  margin: 0px auto
+  margin: 20px auto
   text-align: center
 
   h1
@@ -20,13 +20,16 @@ button, input
     font-family: $base-font
     text-align: center
     font-size: 3em
-    top: 0
+    margin: 0
     line-height: 1
+    padding-bottom: 30px
+
 
   p
     font-family: $second-font
     color: #FFF
     line-height: 1
+    padding-bottom: 30px
 
 #audio-player
   background: url('../../img/music-player-bg.gif') no-repeat
@@ -66,7 +69,8 @@ input#volume::-webkit-slider-thumb
   margin: 15px -8px 17px
   overflow: auto
   border: none
-  outline:none
+  outline: none
+  
 
   #prev, #play, #pause, #stop, #next
     border: none
