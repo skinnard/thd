@@ -54,8 +54,9 @@
 		this.el = el;
 		this.options = extend( {}, this.options );
   		extend( this.options, options );
-		this.svg = Snap( this.options.size.w, this.options.size.h );
-		this.svg.attr( 'viewBox', '0 0 100 100' );
+			// this.svg = Snap( 35, 64 );
+		this.svg = Snap( 40, 40 );
+		this.svg.attr( 'viewBox', '0 0 60 60' );
 		this.el.appendChild( this.svg.node );
 		// state
 		this.toggled = false;
@@ -85,7 +86,7 @@
 		speed : 200,
 		easing : mina.linear,
 		evtoggle : 'click', // click || mouseover
-		size : { w : 64, h : 64 },
+		size : { w : 40, h : 40 },
 		onLoad : function() { return false; },
 		onToggle : function() { return false; }
 	};
