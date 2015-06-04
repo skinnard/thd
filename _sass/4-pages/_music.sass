@@ -30,6 +30,7 @@ button, input
     color: #FFF
     line-height: 1
     padding-bottom: 30px
+    margin: 0 auto
 
 #audio-player
   background: url('../../img/music-player-bg.gif') no-repeat
@@ -70,7 +71,7 @@ input#volume::-webkit-slider-thumb
   overflow: auto
   border: none
   outline: none
-  
+
 
   #prev, #play, #pause, #stop, #next
     border: none
@@ -116,9 +117,6 @@ input#volume::-webkit-slider-thumb
     padding-top: 3px
     font-size: 0.85em
 
-    // &:hover
-    //   opacity: 1
-
   .active
     opacity: 1
 
@@ -143,7 +141,16 @@ input#volume::-webkit-slider-thumb
     left: 45px
     top: 0
 
+// Media Queries
 
++media($tablet)
+
+  #music-page
+    height: 100%
+    margin: -20px auto
+
+    p
+      width: 90%
 
   // #duration
   //   position: absolute

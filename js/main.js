@@ -184,5 +184,6 @@ $("a.group").fancybox({
   'overlayShow'	:	false
 });
 
+$("a.grouped_elements").fancybox();
 
 }); //END OF DOC READY

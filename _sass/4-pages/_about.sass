@@ -6,19 +6,30 @@
   text-align: center
   line-height: 1
 
-
   h1
     font-size: 3em
 
   p
     font-family: $second-font
 
+.about-logo
+  text-align: center
+  padding-top: 30px
+
+  img
+    width: 30%
+
 // MEDIA QUERIES
 
 +media($tablet)
 
   #about-container
-    margin: 0 auto
+    margin: -20px auto
+    width: 90%
 
     h1
-      margin: 0
+      margin: 0 0 30px
+      padding-top: 130px
+
+    .about-logo
+      width: 40%

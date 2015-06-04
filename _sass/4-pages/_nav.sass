@@ -14,12 +14,6 @@
     size: 2em
   cursor: pointer
 
-+media($tablet)
-  .nav-wrapper
-    position: relative
-    top: 25px
-    width: 100%
-
 #nav-list
   font:
     family: $base-font
@@ -45,7 +39,9 @@
   .nav-wrapper
     background: #FFF
     right: 0
-    margin: -30px 0
+    margin: -25px 0 40px
+    position: relative
+    width: 100%
 
   #nav-title
     color: #000
@@ -70,3 +66,16 @@
     line-height: 1.7
     padding-bottom: 15px
     cursor: pointer
+
+    li
+      float: left
+      padding-right: 5%
+      padding-bottom: 15px
+
++media($mobile)
+
+  #nav-list
+
+    li
+      float: none
+      padding: 0

@@ -4,6 +4,6 @@
 $base-font: 'lullabyregular', Arial, sans-serif;
 $second-font: 'Slabo 27px', serif;
 
-$mobile: (max-width 500px);
-$tablet: (max-width 800px);
-$mobile-small: (max-width 350px);
+$mobile: new-breakpoint(max-width 500px 4);
+$tablet: new-breakpoint(max-width 800px 4);
+$mobile-small: new-breakpoint(max-width 350px 4);

@@ -31,77 +31,63 @@ layout: default
     <div id="about-container" class="section">
       <h1>We are the best band ever.</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, voluptas voluptatem. Est quod eum, ea neque quas dicta ipsum dolores laborum expedita dolor voluptatem itaque consequatur unde. Rerum, sint, consequatur.</p>
+      <img class="about-logo" src="img/about-logo.png" alt="The Handsome Devils">
     </div>
   </div>
   <!-- END OF ABOUT PAGE -->
 
   <!-- START OF MUSIC PAGE -->
-
-  <div class="music-wrapper section">
-    <h1>Have a listen!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-    <div id="audio-player">
-      <div id="audio-info">
-        <span class="title"></span>
-      </div>
-      <input type="range" id="volume" min="0" max="10" value="5">
-      <div id="audio-buttons">
-        <button id="prev"></button>
-        <button id="play"></button>
-        <button id="pause"></button>
-        <button id="stop"></button>
-        <button id="next"></button>
-      </div>
-      <div class="clearfix"></div>
-      <div id="tracker">
-        <div id="progress-bar">
-          <span id="progress"></span>
+  <div id="music-page">
+    <div class="music-wrapper section">
+      <h1>Have a listen!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+      <div id="audio-player">
+        <div id="audio-info">
+          <span class="title"></span>
         </div>
-        <!-- <span id="duration"></span> -->
+        <input type="range" id="volume" min="0" max="10" value="5">
+        <div id="audio-buttons">
+          <button id="prev"></button>
+          <button id="play"></button>
+          <button id="pause"></button>
+          <button id="stop"></button>
+          <button id="next"></button>
+        </div>
+        <div class="clearfix"></div>
+        <div id="tracker">
+          <div id="progress-bar">
+            <span id="progress"></span>
+          </div>
+          <!-- <span id="duration"></span> -->
+        </div>
+        <div class="clearfix"></div>
+        <ul id="playlist">
+          <li song="life.mp3" title="Life's Suckin' the Life Outta Me">Life's Suckin' the Life Outta Me</li>
+          <li song="bad-romance.mp3" title="Bad Romance">Bad Romance</li>
+          <li song="whiskyandwomen.mp3" title="Whisky &amp; Women">Whisky &amp; Women</li>
+          <li song="washeduppreacherman.mp3" title="Washed Up Preacher Man">Washed Up Preacher Man</li>
+          <li song="justcantgetenough.mp3" title="I Just Can't Get Enough">I Just Can't Get Enough</li>
+        </ul>
       </div>
-      <div class="clearfix"></div>
-      <ul id="playlist">
-        <li song="life.mp3" title="Life's Suckin' the Life Outta Me">Life's Suckin' the Life Outta Me</li>
-        <li song="bad-romance.mp3" title="Bad Romance">Bad Romance</li>
-        <li song="whiskyandwomen.mp3" title="Whisky &amp; Women">Whisky &amp; Women</li>
-        <li song="washeduppreacherman.mp3" title="Washed Up Preacher Man">Washed Up Preacher Man</li>
-        <li song="justcantgetenough.mp3" title="I Just Can't Get Enough">I Just Can't Get Enough</li>
-      </ul>
     </div>
   </div>
+  <!-- END OF MUSIC PAGE DIV -->
   <!-- END OF MUSIC PAGE -->
 
-  <!-- START OF PICTURES PAGE -->
+  <!-- START OF PICTURES PAGE --> <!-- <a class="grouped_elements" rel="group1" href="image_big_1.jpg"><img src="image_small_1.jpg" alt=""/></a> -->
+
   <div id="pictures-page">
     <div id="pictures-wrapper" class="section">
       <h1 id="pictures-title">Take a look at these handsome devils</h1>
-      <a id="single_image" class="pic-1" href="img/THD-1.JPG">
-        <img src="img/THD-1-small.jpg" alt="" />
-      </a>
-      <a id="single_image" class="pic-2" href="img/THD-2.JPG">
-        <img src="img/THD-2-small.jpg" alt="" />
-      </a>
-      <a id="single_image" class="pic-3" href="img/THD-3.JPG">
-        <img src="img/THD-3-small.jpg" alt="" />
-      </a>
-      <a id="single_image" class="pic-4" href="img/THD-4.JPG">
-        <img src="img/THD-4-small.jpg" alt="" />
-      </a>
-      <a id="single_image" class="pic-5" href="img/THD-1.JPG">
-        <img src="img/THD-1-small.jpg" alt="" />
-      </a>
-      <a id="single_image" class="pic-6" href="img/THD-6.JPG">
-        <img src="img/THD-6-small.jpg" alt="" />
-      </a>
-      <a id="single_image" class="pic-7" href="img/THD-7.JPG">
-        <img src="img/THD-7-small.jpg" alt="" />
-      </a>
-      <a id="single_image" class="pic-8" href="img/THD-8.JPG">
-        <img src="img/THD-8-small.jpg" alt="" />
-      </a>
-      <a id="single_image" class="pic-9" href="img/THD-9.JPG">
-        <img src="img/THD-9-small.jpg" alt="" />
-      </a>
+      <a class="grouped_elements pic-1" rel="group1" href="img/THD-1.JPG"><img src="img/THD-1-small.jpg" alt="" /></a>
+      <a class="grouped_elements pic-2" rel="group1" href="img/THD-2.JPG"><img src="img/THD-2-small.jpg" alt="" /></a>
+      <a class="grouped_elements pic-3" rel="group1" href="img/THD-3.JPG"><img src="img/THD-3-small.jpg" alt="" /></a>
+      <a class="grouped_elements pic-4" rel="group1" href="img/THD-4.JPG"><img src="img/THD-4-small.jpg" alt="" /></a>
+      <a class="grouped_elements pic-5" rel="group1" href="img/THD-1.JPG"><img src="img/THD-1-small.jpg" alt="" /></a>
+      <a class="grouped_elements pic-6" rel="group1" href="img/THD-6.JPG"><img src="img/THD-6-small.jpg" alt="" /></a>
+      <a class="grouped_elements pic-7" rel="group1" href="img/THD-7.JPG"><img src="img/THD-7-small.jpg" alt="" /></a>
+      <a class="grouped_elements pic-8" rel="group1" href="img/THD-8.JPG"><img src="img/THD-8-small.jpg" alt="" /></a>
+      <a class="grouped_elements pic-9" rel="group1" href="img/THD-9.JPG"><img src="img/THD-9-small.jpg" alt="" /></a>
     </div>
   </div>
   <!-- END OF PICTURES PAGE -->
