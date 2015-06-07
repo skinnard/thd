@@ -199,7 +199,7 @@ var svgIconConfig = {
 		]
 	},
 	hamburgerCross : {
-		url : '../img/svg/hamburger.svg',
+		url : '{{ site.baseurl }}/../img/svg/hamburger.svg',
 		animation : [
 			{
 				el : 'path:nth-child(1)',
