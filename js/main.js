@@ -186,4 +186,8 @@ $("a.group").fancybox({
 
 $("a.grouped_elements").fancybox();
 
+$("#nav-list li").on('click', function(){
+  $("#nav-list").toggle();
+});
+
 }); //END OF DOC READY
