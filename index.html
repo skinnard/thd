@@ -100,6 +100,7 @@ layout: default
       <form action="//formspree.io/glenrhodges@gmail.com" method="POST">
         <input id="name" type="text" placeholder="name" name="name">
         <input id="email" type="email" placeholder="email" name="_replyto">
+        <input type="hidden" name="_next" value="{{ site.baseurl }}/thanks.html" />
         <textarea id="textarea" placeholder="message" name="comments" COLS=40 ROWS=6>
         </TEXTAREA>
         <input id="send" type="submit" value="Send">
