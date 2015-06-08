@@ -15,13 +15,22 @@ var parallax = new Parallax(scene);
 })();
 
 //Open menu when hamburger or menu title is clicked
+
+$(".si-icon-hamburger-cross").click(function() {
+  $("#nav-list").fadeToggle(400);
+
+});
+
+$("#nav-list li").on('click', function(){
+  $(".si-icon-hamburger-cross").click();
+  $("#nav-list").toggle();
+});
+
 $( "#nav-title" ).click(function() {
   $( ".si-icon-hamburger-cross" ).click();
 });
 
-$(".si-icon-hamburger-cross").click(function() {
-  $("#nav-list").fadeToggle(400);
-});
+
 
 
 // AUDIO PLAYER
@@ -186,8 +195,5 @@ $("a.group").fancybox({
 
 $("a.grouped_elements").fancybox();
 
-$("#nav-list li").on('click', function(){
-  $("#nav-list").toggle();
-});
 
 }); //END OF DOC READY
