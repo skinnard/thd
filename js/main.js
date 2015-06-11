@@ -31,8 +31,6 @@ $( "#nav-title" ).click(function() {
 });
 
 
-
-
 // AUDIO PLAYER
 
 var audio;

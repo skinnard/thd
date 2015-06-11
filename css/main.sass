@@ -9,25 +9,16 @@
 
 *
   margin: 0
+  box-sizing: initial
 
-body
-  background: black
-  overflow: scroll
-
-html, body
+html
+  background-color: #000
+  background: url("{{ site.baseurl }}/../img/bg.jpg") no-repeat
+  background-size: cover
   height: 100%
 
-#main-wrapper
-  min-height: 100%
-  /* equal to footer height */
-  margin-bottom: -142px
+body
 
-.main-wrapper:after
-  content: ""
-  display: block
-
-.site-footer, .main-wrapper:afterjekyl
-  height: 142px
 
 .active
   opacity: 1
