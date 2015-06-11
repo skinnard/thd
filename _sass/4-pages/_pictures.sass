@@ -1,6 +1,9 @@
 
+#pic-wrap
+  margin-left: 4%
 
-
+  +media($mobile)
+    margin-left: 0
 
 +media($tablet)
 
@@ -20,24 +23,27 @@
     h1
       margin: 0 3% 35px
 
+
+
 #pictures-wrapper
   +outer-container
   max-width: 600px
-  margin-top: 20px
+  margin-top: 0
   text-align: center
 
   a
     +span-columns(4)
-    margin: -2px
+    margin: 0px
     padding: 0px
+
     +media($mobile)
       +span-columns(12)
       height: auto
       width: 100%
 
   img
-    width: 200px
     width: 100%
+    margin-top: -4px
 
 
   h1
