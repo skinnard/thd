@@ -1,5 +1,9 @@
 
+
 $(document).ready(function() {
+
+// SPINNER GIF FUNCTION
+// $('#loading').hide();
 
 // Hero paralax script
 var scene = document.getElementById('scene');
