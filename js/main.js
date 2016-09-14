@@ -152,12 +152,17 @@ $( "#music" ).click(function( event ) {
   $( '.section' ).hide();
   $( '.music-wrapper' ).show();
 });
-// Music Page
+// Pictures Page
 $( "#pics" ).click(function( event ) {
   $( '.section' ).hide();
   $( '#pictures-wrapper' ).show();
 });
-// Music Page
+// Gigs Page
+$( "#gigs" ).click(function( event ) {
+  $( '.section' ).hide();
+  $( '#gigs-wrapper' ).show();
+});
+// Contact Page
 $( "#contact" ).click(function( event ) {
   $( '.section' ).hide();
   $( '#contact-container' ).show();
