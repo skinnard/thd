@@ -9,7 +9,7 @@ button, input
   clear: both
 
 .music-wrapper
-  width: 300px
+  width: 400px
   min-height: 400px
   overflow: auto
   margin: 100px auto
@@ -33,19 +33,22 @@ button, input
     margin: 0 auto
 
 #audio-player
-  -webkit-border-image: url('{{ site.baseurl }}/../../img/THD-music-player-border.png') /* Safari 3.1-5 */
-  -o-border-image: url('{{ site.baseurl }}/../../img/THD-music-player-border.png') /* Opera 11-12.1 */
-  border-image: url('{{ site.baseurl }}/../../img/THD-music-player-border.png')
+  // -webkit-border-image: url('../../img/THD-music-player-border.png') /* Safari 3.1-5 */
+  // -o-border-image: url('../../img/THD-music-player-border.png') /* Opera 11-12.1 */
+  // border-image-source: url('../../img/THD-music-player-border.png')
   // background: url('{{ site.baseurl }}/../../img/music-player-bg.gif') no-repeat
-  // width: 300px
-  // min-height: 400px
-  // overflow: auto
-  // margin: 0px auto
-  // text-align: center
+  width: 300px
+  min-height: 250px
+  overflow: hidden
+  margin: 0px auto
+  text-align: center
+  border-left: 1px solid #fff
+  border-right: 1px solid #fff
+
 
 #audio-info
   text-align: center
-  margin-top: 145px
+  margin-top: 15px
   font-size: 1.1em
 
   span
