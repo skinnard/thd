@@ -33,10 +33,6 @@ button, input
     margin: 0 auto
 
 #audio-player
-  // -webkit-border-image: url('../../img/THD-music-player-border.png') /* Safari 3.1-5 */
-  // -o-border-image: url('../../img/THD-music-player-border.png') /* Opera 11-12.1 */
-  // border-image-source: url('../../img/THD-music-player-border.png')
-  // background: url('{{ site.baseurl }}/../../img/music-player-bg.gif') no-repeat
   width: 280px
   min-height: 250px
   overflow: hidden
@@ -44,6 +40,9 @@ button, input
   text-align: center
   border-left: 1px solid #fff
   border-right: 1px solid #fff
+
+  img 
+    width: 100%
 
 
 #audio-info
@@ -110,7 +109,7 @@ input#volume::-webkit-slider-thumb
 
 #playlist
   list-style: none
-  padding: 0 5px
+  padding: 20px 5px 0
   text-align: center
 
   li
@@ -121,7 +120,7 @@ input#volume::-webkit-slider-thumb
     color: #FFF
     line-height: 1
     padding-top: 3px
-    font-size: 0.85em
+    font-size: 1.1em
 
   .active
     opacity: 1
