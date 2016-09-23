@@ -33,12 +33,15 @@ button, input
     margin: 0 auto
 
 #audio-player
-  background: url('{{ site.baseurl }}/../../img/music-player-bg.gif') no-repeat
-  width: 300px
-  min-height: 400px
-  overflow: auto
-  margin: 0px auto
-  text-align: center
+  -webkit-border-image: url('{{ site.baseurl }}/../../img/THD-music-player-border.png') /* Safari 3.1-5 */
+  -o-border-image: url('{{ site.baseurl }}/../../img/THD-music-player-border.png') /* Opera 11-12.1 */
+  border-image: url('{{ site.baseurl }}/../../img/THD-music-player-border.png')
+  // background: url('{{ site.baseurl }}/../../img/music-player-bg.gif') no-repeat
+  // width: 300px
+  // min-height: 400px
+  // overflow: auto
+  // margin: 0px auto
+  // text-align: center
 
 #audio-info
   text-align: center
