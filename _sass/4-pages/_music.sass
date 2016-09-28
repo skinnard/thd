@@ -33,17 +33,16 @@ button, input
     margin: 0 auto
 
 #audio-player
-  // -webkit-border-image: url('../../img/THD-music-player-border.png') /* Safari 3.1-5 */
-  // -o-border-image: url('../../img/THD-music-player-border.png') /* Opera 11-12.1 */
-  // border-image-source: url('../../img/THD-music-player-border.png')
-  // background: url('{{ site.baseurl }}/../../img/music-player-bg.gif') no-repeat
-  width: 300px
+  width: 280px
   min-height: 250px
   overflow: hidden
-  margin: 0px auto
+  margin: 15px auto
   text-align: center
   border-left: 1px solid #fff
   border-right: 1px solid #fff
+
+  img 
+    width: 100%
 
 
 #audio-info
@@ -73,7 +72,7 @@ input#volume::-webkit-slider-thumb
 #audio-buttons
   width: 100%
   display: block
-  margin: 15px -8px 17px
+  margin: 15px 0px 17px
   overflow: auto
   border: none
   outline: none
@@ -81,7 +80,7 @@ input#volume::-webkit-slider-thumb
 
   #prev, #play, #pause, #stop, #next
     border: none
-    margin-left: 20px
+    margin-left: 10px
 
   #prev
     background: url('{{ site.baseurl }}/../../img/prev.png') no-repeat
@@ -110,7 +109,7 @@ input#volume::-webkit-slider-thumb
 
 #playlist
   list-style: none
-  padding: 0 5px
+  padding: 20px 5px 0
   text-align: center
 
   li
@@ -121,7 +120,7 @@ input#volume::-webkit-slider-thumb
     color: #FFF
     line-height: 1
     padding-top: 3px
-    font-size: 0.85em
+    font-size: 1.1em
 
   .active
     opacity: 1
@@ -158,13 +157,22 @@ input#volume::-webkit-slider-thumb
     p
       width: 90%
 
-  // #duration
-  //   position: absolute
-  //   right: 20px
-  //   top: -7px
-  //   padding: 0 5px 3px
-  //   border: 1px solid #FFF
-  //   font-family: $base-font
-  //   color: #FFF
-  //   font-size: .7em
-  //   line-height: 1
+  .music-wrapper
+    width: 320px
+    min-height: 400px
+    overflow: auto
+    margin: 100px auto
+    text-align: center
+
++media($mobile)
+
+  .music-wrapper
+
+    h1
+      color: #FFF
+      font-family: $base-font
+      text-align: center
+      font-size: 2.5em
+      margin: 0
+      line-height: 1
+      padding-bottom: 30px

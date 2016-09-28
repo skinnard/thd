@@ -5,6 +5,5 @@ description: The official website for the most rockin’, badass, hootin’, hol
 baseurl: #"/thd"
 url: "http://thehandsomedevils.ca"
 
-
 # Build settings
 markdown: kramdown
