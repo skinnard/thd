@@ -1,6 +1,8 @@
 #gigs-wrapper
+	width: 400px
+	min-height: 400px
+	overflow: auto
 	margin: 100px auto 0
-	width: 50%
 	font-family: $base-font
 	text-align: center
 
@@ -10,21 +12,27 @@
 		color: #FFF
 		line-height: 1
 		padding: 10px
+		margin-bottom: 30px
+
+	.player-border-top,
+		width: 100%
+		padding: 0
 
 	#gigs-border
-		background: url('{{ site.baseurl }}/../../img/music-player-bg.gif') no-repeat
-		width: 300px
+		width: 100%
+		max-width: 300px
 		min-height: 400px
 		overflow: auto
 		margin: 0px auto
 		text-align: center
+		
 
 		h3
 			font-family: $base-font
 			font-size: 1.8em
 			color: #bdbdbd
 			line-height: 1
-			padding-top: 170px
+			padding-top: 0px
 			margin: 0 auto
 
 		p
@@ -32,12 +40,19 @@
 			color: #bdbdbd
 			line-height: 1
 			padding-top: 10px
-			margin: 0 auto
+			margin: 0 auto 40px
 			font-size: 1.1em
+
 
 		a
 			color: #bdbdbd
 			text-decoration: underline
+
+		.border-box
+			width: 90%
+			border-left: 1px solid grey
+			border-right: 1px solid grey
+			margin: 20px auto
 
 	img
 		width: 200px
