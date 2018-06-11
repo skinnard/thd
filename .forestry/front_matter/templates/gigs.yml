@@ -1,11 +1,14 @@
 ---
 hide_body: false
-is_partial: false
+is_partial: true
 fields:
 - name: layout
   label: Layout
   type: text
   hidden: false
-  default: ''
+  default: Gigs
+- type: text
+  label: Title
+  name: title
 pages:
 - gigs.md
