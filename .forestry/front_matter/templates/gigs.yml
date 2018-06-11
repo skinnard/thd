@@ -2,13 +2,17 @@
 hide_body: false
 is_partial: true
 fields:
-- name: layout
-  label: Layout
-  type: text
-  hidden: false
-  default: Gigs
 - type: text
   label: Title
   name: title
+  default: Gig Title
+- type: textarea
+  name: description
+  label: Description
+  default: Gig Description
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 pages:
 - gigs.md
