@@ -1,0 +1,59 @@
+#contact-container {
+  margin: 100px auto 0;
+  width: 300px;
+  font-family: $base-font;
+  text-align: center;
+
+  h1 {
+    font-family: $base-font;
+    font-size: 3em;
+    color: #FFF;
+    line-height: 1;
+  }
+
+  p {
+    font-family: $second-font;
+    color: #bdbdbd;
+    line-height: 1;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+
+  #name, #email, #textarea, #send {
+    width: 100%;
+    margin-top: 5px;
+    background-color: #000;
+    border: 1px solid #FFF;
+    padding: 5px 10px 10px;
+    color: #FFF;
+  }
+}
+
++media($tablet) {
+
+  #contact-container
+    margin: -53px auto 0;
+}
+
+
++media($mobile) {
+
+  #contact-container {
+    margin: 0 auto;
+    width: 90%;
+
+    h1 {
+      margin: 0 0 20px;
+    }
+
+    p {
+      width: 90%;
+    }
+
+    form {
+      width: 92%;
+      margin: 0 auto;
+      float: left;
+    }
+  }
+}

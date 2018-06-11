@@ -1,0 +1,62 @@
+#about-container {
+  color: #FFF;
+  font-family: $base-font;
+  width: 450px;
+  margin: 100px auto 0;
+  text-align: center;
+  line-height: 1;
+
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-family: $body-font;
+    line-height: 1;
+    font-weight: 300;
+    color: #bdbdbd;
+    font-size: 15px;
+    padding-top: 20px;
+  }
+
+  img {
+    width: 200px;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+
+// MEDIA QUERIES
+
++media($tablet) {
+
+  #about-container {
+    margin: -20px auto;
+    width: 50%;
+
+    h1 {
+      margin: -20px 0 30px;
+      padding: 130px 10px 0;
+      font-size: 2.5em;
+    }
+
+    .about-logo {
+      width: 40%;
+    }
+  }
+
++media($mobile) {
+
+  #about-container {
+    width: 90%;
+
+    h1 {
+      margin: 0 0 30px;
+      padding-top: 130px;
+    }
+
+    .about-logo {
+      width: 40%;
+    }
+  }
+}
