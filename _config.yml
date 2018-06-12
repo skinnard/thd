@@ -9,7 +9,5 @@ url: "http://thehandsomedevils.ca"
 markdown: kramdown
 
 collections:
-- gigs:
-  output: true
-- songs:
-  output: true
+  gigs:
+    output: true

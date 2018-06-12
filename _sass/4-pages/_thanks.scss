@@ -1,0 +1,36 @@
+#thanks-page {
+  background: #000;
+  text-align: center;
+  margin-top: 100px;
+
+  h1 {
+    font-family: $base-font;
+    font-size: 3em;
+    color: #fff;
+  }
+
+  p {
+    font-family: $second-font;
+    font-size: 1em;
+    color: #fff;
+  }
+
+  button {
+    display: block;
+    margin: 30px auto;
+    background: red;
+    font-family: $base-font;
+    border: none;
+    padding: 10px 20px 14px;
+    line-height: 0.5;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}

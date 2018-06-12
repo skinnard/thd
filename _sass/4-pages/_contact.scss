@@ -7,7 +7,7 @@
   h1 {
     font-family: $base-font;
     font-size: 3em;
-    color: #FFF;
+    color: #fff;
     line-height: 1;
   }
 
@@ -19,25 +19,26 @@
     margin: 0 auto;
   }
 
-  #name, #email, #textarea, #send {
+  #name,
+  #email,
+  #textarea,
+  #send {
     width: 100%;
     margin-top: 5px;
     background-color: #000;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     padding: 5px 10px 10px;
-    color: #FFF;
+    color: #fff;
   }
 }
 
-+media($tablet) {
-
-  #contact-container
+@media screen and (max-width: 800px) {
+  #contact-container {
     margin: -53px auto 0;
+  }
 }
 
-
-+media($mobile) {
-
+@media screen and (max-width: 500px) {
   #contact-container {
     margin: 0 auto;
     width: 90%;

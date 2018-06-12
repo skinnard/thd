@@ -1,0 +1,100 @@
+.nav-wrapper {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 200;
+  float: right;
+}
+
+#nav-title {
+  color: #FFF;
+  float: right;
+  margin: -5px 10px 0 0;
+  font-family: $base-font;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#nav-list {
+  font-family: $base-font;
+  font-size: 1.3em;
+  list-style: none;
+  color: #FFF;
+  margin: -10px 0 0;
+  padding-left: 65px;
+  line-height: 1.7;
+  display: none;
+  cursor: pointer;
+
+  li {
+    opacity: 0.5;
+  }
+
+  .active {
+    opacity: 1;
+  }
+}
+
+// Media Queries
+
+@media screen and (max-width: 800px) {
+
+    .nav-wrapper {
+      background: #FFF;
+      right: 0;
+      margin: -25px 0 60px;
+      position: relative;
+      width: 100%;
+    }
+
+    #nav-title {
+      color: #000;
+      margin: 20px 20px 5px;
+    }
+
+    #nav-title li {
+      color: #000;
+    }
+
+    path {
+      stroke: #000;
+    }
+
+    .si-icons span {
+      margin: 28px 0px 0 15px;
+    }
+
+    #nav-list {
+      font-family: "lullabyregular", Arial, sans-serif;
+      font-size: 1.3em;
+      list-style: none;
+      color: #000;
+      margin: 0;
+      padding: 0 0 0 25px;
+      line-height: 1.7;
+      cursor: pointer;
+
+      li {
+        float: left;
+        padding-right: 5%;
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+@media screen and (max-width: 500px) {
+
+  #nav-list {
+    margin-bottom: 20px;
+
+    li {
+      float: none;
+      padding: 0;
+    }
+
+    .home {
+      margin-top: 10px;
+    }
+
+  }
+}

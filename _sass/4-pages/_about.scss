@@ -1,5 +1,5 @@
 #about-container {
-  color: #FFF;
+  color: #fff;
   font-family: $base-font;
   width: 450px;
   margin: 100px auto 0;
@@ -28,8 +28,7 @@
 
 // MEDIA QUERIES
 
-+media($tablet) {
-
+@media screen and (max-width: 800px) {
   #about-container {
     margin: -20px auto;
     width: 50%;
@@ -44,9 +43,9 @@
       width: 40%;
     }
   }
+}
 
-+media($mobile) {
-
+@media screen and (max-width: 500px) {
   #about-container {
     width: 90%;
 
