@@ -5,6 +5,10 @@ $(document).ready(function() {
 // SPINNER GIF FUNCTION
 // $('#loading').hide();
 
+$(body).click(function({
+  console.log('clicked');
+});
+
 // Hero paralax script
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);

@@ -1,0 +1,76 @@
+--- 
+title: Music 
+permalink: music 
+layout: default 
+title: Have a listen!
+description: If you want to know what we sound like, kick back, press play and let the handsomeness wash over you. If you like what you hear, you can buy high quality versions from the links below. Enjoy! 
+---
+
+<!-- START OF MUSIC PAGE -->
+<div id="music-page">
+    <div class="music-wrapper section">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
+
+        <div id="download-wrapper-cdbaby">
+            <a href="http://www.cdbaby.com/cd/thehandsomedevils2" target="blank">
+                <img class="cd-baby" src="img/cd-baby-logo.jpg" alt="">
+            </a>
+        </div>
+
+        <div id="download-wrapper-itunes">
+            <a href="https://itun.es/ca/EuLmfb" target="blank">
+                <img class="itunes" src="img/itunes-logo-png.png" alt="">
+            </a>
+        </div>
+
+        <img class="player-border-top" src="img/THD-music-player-border.png" alt="">
+
+        <div id="audio-player">
+
+            <img class="guitar" src="img/guitar.png" alt="">
+
+            <div id="audio-info">
+                <span class="title"></span>
+            </div>
+            <input type="range" id="volume" min="0" max="10" value="5">
+            <div id="audio-buttons">
+                <button id="prev"></button>
+                <button id="play"></button>
+                <button id="pause"></button>
+                <button id="stop"></button>
+                <button id="next"></button>
+            </div>
+            <div class="clearfix"></div>
+            <div id="tracker">
+                <div id="progress-bar">
+                    <span id="progress"></span>
+                </div>
+                <!-- <span id="duration"></span> -->
+            </div>
+            <div class="clearfix"></div>
+            <ul id="playlist">
+                <li song="The Handsome Devils - Hanky For My Tears.mp3" title="Hankey For My Tears">Hankey For My Tears</li>
+                <li song="The Handsome Devils - Suburb.mp3" title="Suburbs">Suburbs</li>
+                <li song="The Handsome Devils - Honey Lets Go.mp3" title="Honey Let's Go">Honey Let's Go</li>
+                <li song="demons.mp3" title="Demons In the Shed">Demons In the Shed</li>
+                <li song="dancing.mp3" title="Dancing Alone">Dancing Alone</li>
+
+                <!--  <li song="arms.mp3" title="Saviour's Arms">Saviour&rsquo;s Arms</li>
+                <li song="around.mp3" title="Don't Come Around">Don&rsquo;t Come Around</li>
+                
+                <li song="wage.mp3" title="Minimum Wage">Minimum Wage</li>
+                <li song="sucks.mp3" title="Life Sucks">Life Sucks</li>
+                <li song="record.mp3" title="One More Record">One More Record</li>
+                <li song="whisky.mp3" title="Whisky & Women">Whisky &amp; Women</li>
+                <li song="say.mp3" title="You Say That You Will">You Say That You Will</li> -->
+            </ul>
+
+        </div>
+
+        <img class="player-border-top" src="img/THD-music-player-border-bottom.png" alt="">
+
+    </div>
+</div>
+<!-- END OF MUSIC PAGE DIV -->
+<!-- END OF MUSIC PAGE -->
