@@ -135,12 +135,17 @@ layout: default
         <div id=gigs-border>
           <img class="player-border-top" src="img/THD-music-player-border.png" alt="">
             <div class="border-box">
-              <h3 class="item-2"><a href="http://sewhungry.com/" target="blank">Sew Hungry on Ottawa St.</a></h3>
-              <p>Friday May 5th</p>
-              <h3 class="item-2"><a href="http://www.casbahlounge.ca/" target="blank">The Casbah</a></h3>
+
+                {% for item in site.gigs %}
+                  <h3 class="item-2"><a href="http://sewhungry.com/" target="blank">{{ item.title }}</a></h3>
+                  <p>{{ item.description }}</p>
+                {% endfor %}
+
+              
+              <!-- <h3 class="item-2"><a href="http://www.casbahlounge.ca/" target="blank">The Casbah</a></h3>
               <p>Friday May 5th</p>
               <h3 class="item-2"><a href="http://www.rhyc.ca/" target="blank">Hamilton<br>Yacht Club</a></h3>
-              <p>Friday June 16th</p>
+              <p>Friday June 16th</p> -->
             </div>
           <img class="player-border-top" src="img/THD-music-player-border-bottom.png" alt="">  
         </div>          
