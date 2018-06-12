@@ -11,3 +11,7 @@ markdown: kramdown
 collections:
   gigs:
     output: true
+  music:
+    output: true
+  gallery:
+    output: true
