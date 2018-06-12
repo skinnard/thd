@@ -9,10 +9,3 @@ public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
-collections:
-  _posts:
-    default_front_matter_template: posts
-  _pages:
-    default_front_matter_template: pages
-  _gigs:
-    default_front_matter_template: gigs

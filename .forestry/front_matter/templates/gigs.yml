@@ -14,5 +14,3 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-pages:
-- gigs.md
