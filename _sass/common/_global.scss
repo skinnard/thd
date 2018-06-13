@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    box-sizing: initial;
+}
+  
+html {
+    background-color: #000;
+    background: url("/img/bg.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.active {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+}

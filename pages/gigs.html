@@ -1,33 +1,33 @@
----
-title: Gigs
-permalink: gigs
-layout: default
-title: Upcoming Gigs
+--- 
+title: Gigs 
+permalink: gigs 
+layout: default 
+title: Upcoming Gigs 
 description: 
 ---
 
- <!-- START Of UPCOMING GIGS PAGE -->
- <div id="gigs-page">
-        <div id="gigs-wrapper" class="section">
-          <h1></h1>
-    
-            <div id="gigs-border">
-              <img class="player-border-top" src="img/THD-music-player-border.png" alt="">
-                <div class="border-box">
-    
-                    {% for item in site.gigs %}
-                      <h3 class="item-2"><a href="http://sewhungry.com/" target="blank">{{ item.title }}</a></h3>
+<!-- START Of UPCOMING GIGS PAGE -->
+<div id="gigs-page">
+    <div id="gigs-wrapper" class="section">
+        <h1>{{ page.title }}</h1>
+        <div id="gigs-border">
+            <img class="player-border-top" src="{{ site.url }}/img/THD-music-player-border.png" alt="">
+            <div class="border-box">
+
+                {% for item in site.gigs %}
+                    <h3 class="item-2">
+                        <a href="{{ item.gig_url }}" target="blank">{{ item.title }}</a>
+                    </h3>
+                    <p>{{ item.gig_date | date: "%-d %B %Y" }} at {{ item.gig_date | date: "%-r" }}</p>
+                    <p>{{ item.address }}</p>
+                    {% if item.description %}
                       <p>{{ item.description }}</p>
-                    {% endfor %}
-    
-                  
-                  <!-- <h3 class="item-2"><a href="http://www.casbahlounge.ca/" target="blank">The Casbah</a></h3>
-                  <p>Friday May 5th</p>
-                  <h3 class="item-2"><a href="http://www.rhyc.ca/" target="blank">Hamilton<br>Yacht Club</a></h3>
-                  <p>Friday June 16th</p> -->
-                </div>
-              <img class="player-border-top" src="img/THD-music-player-border-bottom.png" alt="">  
-            </div>          
-          </div>
-      </div>
-      <!-- END Of UPCOMING GIGS PAGE -->
+                    {% endif %}
+                {% endfor %}
+
+            </div>
+            <img class="player-border-top" src="{{ site.url }}/img/THD-music-player-border-bottom.png" alt="">
+        </div>
+    </div>
+</div>
+<!-- END Of UPCOMING GIGS PAGE -->

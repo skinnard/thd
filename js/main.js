@@ -5,37 +5,18 @@ $(document).ready(function() {
 // SPINNER GIF FUNCTION
 // $('#loading').hide();
 
-// Hero paralax script
-var scene = document.getElementById('scene');
-var parallax = new Parallax(scene);
-
-// Snap.svg initalizing script
-(function() {
-
-  [].slice.call(document.querySelectorAll('.si-icons-default > .si-icon')).forEach(function(el) {
-    var svgicon = new svgIcon(el, svgIconConfig);
-  });
-
-})();
-
+//*****************************************************
 //Open menu when hamburger or menu title is clicked
+//*****************************************************
 
-$(".si-icon-hamburger-cross").click(function() {
+$(".nav-wrapper").on('click', function(){
+  $(".hamburger").toggleClass('is-active');
   $("#nav-list").fadeToggle(400);
-
 });
 
-$("#nav-list li").on('click', function(){
-  $(".si-icon-hamburger-cross").click();
-  $("#nav-list").toggle();
-});
-
-$( "#nav-title" ).click(function() {
-  $( ".si-icon-hamburger-cross" ).click();
-});
-
-
+//*****************************************************
 // AUDIO PLAYER
+//*****************************************************
 
 var audio;
 
@@ -136,42 +117,6 @@ $('#volume').change(function(){
   audio.volume = parseFloat(this.value / 10);
 });
 
-
-// Menu Functionality
-$( ".section" ).hide();
-$( ".hero-wrapper").show();
-// Home Page
-$( "#home" ).click(function( event ) {
-  $( '.section' ).hide();
-  $( '.hero-wrapper' ).show();
-});
-// About Page
-$( "#about" ).click(function( event ) {
-  $( '.section' ).hide();
-  $( '#about-container' ).show();
-
-});
-// Music Page
-$( "#music" ).click(function( event ) {
-  $( '.section' ).hide();
-  $( '.music-wrapper' ).show();
-});
-// Pictures Page
-$( "#pics" ).click(function( event ) {
-  $( '.section' ).hide();
-  $( '#pictures-wrapper' ).show();
-});
-// Gigs Page
-$( "#gigs" ).click(function( event ) {
-  $( '.section' ).hide();
-  $( '#gigs-wrapper' ).show();
-});
-// Contact Page
-$( "#contact" ).click(function( event ) {
-  $( '.section' ).hide();
-  $( '#contact-container' ).show();
-});
-
 // Add active state to navigation
 var selector = '#nav-list li';
 
@@ -179,6 +124,7 @@ $(selector).on('click', function(){
     $(selector).removeClass('active');
     $(this).addClass('active');
 });
+
 
 /* Fancy Box */
 
@@ -202,5 +148,8 @@ $("a.group").fancybox({
 
 $("a.grouped_elements").fancybox();
 
+// Parallax Initialize
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);
 
 }); //END OF DOC READY

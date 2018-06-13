@@ -4,6 +4,26 @@
   top: 20px;
   z-index: 200;
   float: right;
+
+  .hamburger {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    right: 75px;
+    top: -2px;
+    outline: none;
+
+    .hamburger-box {
+      width: 30px;
+
+      .hamburger-inner,
+      .hamburger-inner:after,
+      .hamburger-inner:before {
+        background-color: #fff;
+        width: 30px;
+      }
+    }
+  }
 }
 
 #nav-title {
@@ -23,11 +43,19 @@
   margin: -10px 0 0;
   padding-left: 65px;
   line-height: 1.7;
-  // display: none;
+  display: none;
   cursor: pointer;
 
   li {
-    opacity: 0.5;
+    
+    a {
+      color: #FFF;
+      opacity: 0.5;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
   }
 
   .active {
