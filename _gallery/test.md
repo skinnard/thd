@@ -2,5 +2,6 @@
 title: test
 description: Gig Description
 date: 2018-06-14 09:20:37 +0000
+picture: "/uploads/FamJam 1.jpg"
 published: false
 ---
