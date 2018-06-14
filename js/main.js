@@ -14,6 +14,7 @@ $(".nav-wrapper").on('click', function(){
   $("#nav-list").fadeToggle(400);
 });
 
+
 //*****************************************************
 // AUDIO PLAYER
 //*****************************************************
@@ -32,7 +33,7 @@ function initAudio(element){
   var song = element.attr('song');
 
   // Create audio object
-  audio = new Audio('media/' + song);
+  audio = new Audio(song);
 
   if(!audio.currentTime) {
     $('#duration').html('0.00');
@@ -117,16 +118,10 @@ $('#volume').change(function(){
   audio.volume = parseFloat(this.value / 10);
 });
 
-// Add active state to navigation
-var selector = '#nav-list li';
 
-$(selector).on('click', function(){
-    $(selector).removeClass('active');
-    $(this).addClass('active');
-});
-
-
-/* Fancy Box */
+//*****************************************************
+// Fancy Box 
+//*****************************************************
 
 $("a#single_image").fancybox();
 
@@ -148,8 +143,10 @@ $("a.group").fancybox({
 
 $("a.grouped_elements").fancybox();
 
-// Parallax Initialize
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
+//*****************************************************
+// Parallax
+//*****************************************************
+// var scene = document.getElementById('scene');
+// var parallaxInstance = new Parallax(scene);
 
 }); //END OF DOC READY

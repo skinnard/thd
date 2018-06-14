@@ -6,21 +6,21 @@
   float: right;
 
   .hamburger {
-    position: absolute;
+    position: relative;
     color: #fff;
     cursor: pointer;
-    right: 75px;
-    top: -2px;
+    ight: 112px;
+    top: 11px;
     outline: none;
 
     .hamburger-box {
-      width: 30px;
+      width: 40px;
 
       .hamburger-inner,
       .hamburger-inner:after,
       .hamburger-inner:before {
         background-color: #fff;
-        width: 30px;
+        width: 40px;
       }
     }
   }
@@ -29,22 +29,23 @@
 #nav-title {
   color: #FFF;
   float: right;
-  margin: -5px 10px 0 0;
+  margin: -5px 20px 0 0;
   font-family: $base-font;
-  font-size: 2em;
+  font-size: 3em;
   cursor: pointer;
 }
 
 #nav-list {
   font-family: $base-font;
-  font-size: 1.3em;
+  font-size: 2em;
   list-style: none;
   color: #FFF;
   margin: -10px 0 0;
-  padding-left: 65px;
-  line-height: 1.7;
+  padding-right: 30px;
+  line-height: 1.5;
   display: none;
   cursor: pointer;
+  text-align: center;
 
   li {
     
