@@ -15,4 +15,5 @@ fields:
     schema:
       format: markdown
 pages:
+- _gallery/test.md
 - _gigs/awesome-gig-2.md
