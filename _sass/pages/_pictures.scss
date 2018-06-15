@@ -1,64 +1,70 @@
-#pictures-wrapper {
-  margin-top: 100px;
-  text-align: center;
+.pictures-page {
+  padding: 0 20px;
 
-  @media screen and (max-width: 1200px) {
-    margin: -20px 0 0 0;
-    padding-top: 80px;
-  }
-
-  @media screen and (max-width: 500px) {
-    height: auto;
-    width: 100%;
-  }
-
-  a {
-    margin: 0;
-    padding: 0;
-  }
-
-  img {
-    width: 100%;
-    margin-top: -4px;
-  }
-
-  .pictures-title {
-    font-family: $base-font;
-    font-size: 3em;
-    color: white;
+  .pictures-wrapper {
+    margin-top: 100px;
     text-align: center;
-    line-height: 1;
-    max-width: 500px;
-    margin: 0 auto 50px;
-  }
 
-  .pictures-description {
-    font-family: $body-font;
-    line-height: 1.5em;
-    font-weight: 300;
-    color: #bdbdbd;
-    padding-bottom: 40px;
-    font-size: 18px;
-  }
-}
-
-#pic-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1000px;
-  margin: 40px auto 100px;
-
-  a {
-    width: 33%;
+    @media screen and (max-width: 1200px) {
+      margin: -20px 0 0 0;
+      padding-top: 80px;
+    }
 
     @media screen and (max-width: 500px) {
+      height: auto;
       width: 100%;
+    }
+
+    a {
+      margin: 0;
+      padding: 0;
     }
 
     img {
       width: 100%;
-      height: auto;
+      margin-top: -4px;
+    }
+
+    .pictures-title {
+      font-family: $base-font;
+      font-size: 3em;
+      color: white;
+      text-align: center;
+      line-height: 1;
+      max-width: 500px;
+      margin: 0 auto 50px;
+    }
+
+    .pictures-description {
+      font-family: $body-font;
+      line-height: 1.5em;
+      font-weight: 300;
+      color: #bdbdbd;
+      padding-bottom: 40px;
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  #pic-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto 100px;
+
+    a {
+      width: 33%;
+
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }
