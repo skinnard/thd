@@ -2,34 +2,29 @@
   padding: 0 20px;
 
   #about-container {
+    margin: 100px auto 0;
     color: #fff;
     font-family: $base-font;
     width: 100%;
     max-width: 600px;
-    margin: 100px auto 0;
     text-align: center;
     line-height: 1;
 
     @media screen and (max-width: 1200px) {
-      margin: -20px auto;
-    }
-
-    @media screen and (max-width: 500px) {
-      width: 90%;
+      margin: 120px auto;
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 4em;
+      max-width: 500px;
+      margin: 0 auto;
 
       @media screen and (max-width: 1200px) {
-        margin: -20px 0 30px;
-        padding: 130px 10px 0;
         font-size: 2.5em;
       }
 
       @media screen and (max-width: 500px) {
         margin: 0 0 30px;
-        padding-top: 130px;
       }
     }
 

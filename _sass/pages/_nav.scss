@@ -9,9 +9,14 @@
     position: relative;
     color: #fff;
     cursor: pointer;
-    ight: 112px;
+    height: 32px;
     top: 11px;
     outline: none;
+
+    @media screen and (max-width: 1200px) {
+      color: #000;
+      top: 4px;
+    }
 
     .hamburger-box {
       width: 40px;
@@ -21,6 +26,10 @@
       .hamburger-inner:before {
         background-color: #fff;
         width: 40px;
+
+        @media screen and (max-width: 1200px) {
+          background-color: #000;
+        }
       }
     }
   }
@@ -71,14 +80,15 @@
     .nav-wrapper {
       background: #FFF;
       right: 0;
-      margin: -25px 0 60px;
-      position: relative;
+      top: 0;
       width: 100%;
     }
 
     #nav-title {
       color: #000;
-      margin: 20px 20px 5px;
+      top: -10px;
+      right: 20px;
+      position: absolute;
     }
 
     #nav-title li {
@@ -95,18 +105,21 @@
 
     #nav-list {
       font-family: "lullabyregular", Arial, sans-serif;
-      font-size: 1.3em;
+      font-size: 2em;
       list-style: none;
       color: #000;
       margin: 0;
-      padding: 0 0 0 25px;
+      padding: 40px 0;
       line-height: 1.7;
       cursor: pointer;
+      
 
       li {
-        float: left;
-        padding-right: 5%;
         padding-bottom: 15px;
+
+        a {
+          color: #000;
+        }
       }
     }
   }

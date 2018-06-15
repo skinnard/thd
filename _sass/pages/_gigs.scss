@@ -10,6 +10,19 @@
     font-family: $base-font;
     text-align: center;
     margin-bottom: 100px;
+
+    @media screen and (max-width: 1200px) {
+      margin: 120px auto;
+      width: 100%;
+      font-family: $base-font;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      font-family: $base-font;
+      text-align: center;
+    }
   
     h1 {
       font-family: $base-font;
@@ -18,6 +31,11 @@
       line-height: 1;
       padding: 10px;
       padding-bottom: 40px;
+
+      @media screen and (max-width: 500px) {
+        font-size: 2.5em;
+        padding: 0 10px 40px;
+      }
     }
   
     p {
@@ -97,7 +115,7 @@
               font-family: $base-font;
               position: absolute;
               color: #000;
-              z-index: 999;
+              z-index: 100;
               font-size: 12px;
               top: 8px;
               left: 0;
@@ -110,7 +128,7 @@
               font-family: $base-font;
               position: absolute;
               color: #000;
-              z-index: 999;
+              z-index: 100;
               font-size: 25px;
               top: 17px;
               left: 0;
@@ -166,32 +184,4 @@
       }
     }
   }
-  
-  // MEDIA QUERIES
-  
-  @media screen and (max-width: 1200px) {
-    #gigs-wrapper {
-      margin: 0 auto 0;
-      width: 100%;
-      font-family: $base-font;
-      text-align: center;
-    }
-  }
-  
-  @media screen and (max-width: 500px) {
-    #gigs-wrapper {
-      margin: 0 auto 0;
-      width: 100%;
-      font-family: $base-font;
-      text-align: center;
-  
-      h1 {
-        font-size: 2.5em;
-        padding: 0 10px 40px;
-      }
-    }
-  }
-  
-
 }
-
