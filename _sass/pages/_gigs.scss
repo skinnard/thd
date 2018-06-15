@@ -1,91 +1,194 @@
-#gigs-wrapper {
-  width: 400px;
-  min-height: 400px;
-  overflow: auto;
-  margin: 100px auto 0;
-  font-family: $base-font;
-  text-align: center;
-
-  h1 {
-    font-family: $base-font;
-    font-size: 3em;
-    color: #fff;
-    line-height: 1;
-    padding: 10px;
-    margin-bottom: 30px;
-  }
-
-  .player-border-top {
-    width: 100%;
-    padding: 0;
-  }
-
-  #gigs-border {
-    width: 100%;
-    max-width: 300px;
+.gigs-page {
+  .gigs-wrapper {
+    width: 600px;
     min-height: 400px;
     overflow: auto;
-    margin: 0 auto;
-    text-align: center;
-
-    h3 {
-      font-family: $base-font;
-      font-size: 1.8em;
-      color: #bdbdbd;
-      line-height: 1;
-      padding-top: 0;
-      margin: 0 auto;
-    }
-
-    p {
-      font-family: $second-font;
-      color: #bdbdbd;
-      line-height: 1;
-      padding-top: 10px;
-      margin: 0 auto 40px;
-      font-size: 1.1em;
-    }
-
-    a {
-      color: #bdbdbd;
-      text-decoration: underline;
-    }
-
-    .border-box {
-      width: 90%;
-      border-left: 1px solid grey;
-      border-right: 1px solid grey;
-      margin: 20px auto;
-    }
-  }
-
-  img {
-    width: 200px;
-    padding: 100px 0;
-  }
-}
-
-// MEDIA QUERIES
-
-@media screen and (max-width: 800px) {
-  #gigs-wrapper {
-    margin: 0 auto 0;
-    width: 100%;
+    margin: 100px auto 0;
     font-family: $base-font;
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #gigs-wrapper {
-    margin: 0 auto 0;
-    width: 100%;
-    font-family: $base-font;
-    text-align: center;
-
+    margin-bottom: 100px;
+  
     h1 {
-      font-size: 2.5em;
-      padding: 0 10px 40px;
+      font-family: $base-font;
+      font-size: 3em;
+      color: #fff;
+      line-height: 1;
+      padding: 10px;
+      padding-bottom: 40px;
+    }
+  
+    p {
+      font-family: $body-font;
+      line-height: 1.5em;
+      font-weight: 300;
+      color: #bdbdbd;
+      padding-bottom: 40px;
+      font-size: 18px;
+    }
+  
+    .gigs-container {
+      width: 100%;
+      max-width: 500px;
+      min-height: 400px;
+      overflow: auto;
+      margin: 0 auto;
+      text-align: center;
+
+      .gig {
+        padding: 40px 0;
+        border-bottom: 1px solid #777777;
+
+        &:first-child {
+          border-top: 1px solid #777777;
+        }
+
+        .title {
+          font-family: $base-font;
+          font-size: 2em;
+          color: #fff;
+          line-height: 1;
+          padding-bottom: 30px;
+          margin: 0 auto;
+
+          &:hover {
+            text-decoration: underline;
+          }
+  
+          a {
+            color: #fff;
+          }
+        }
+
+        .gig-contents {
+          
+          margin: 0 auto;
+          text-align: left;
+          display: flex;
+
+          &-flag {
+            padding-top: 15px;
+            width: 60px;
+            height: 56px;
+            position: relative;
+            background: rgba(0, 0, 0, 0);
+            color: white;
+            font-size: 11px;
+            letter-spacing: 0.2em;
+            text-align: center;
+            text-transform: uppercase;
+
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 0;
+              height: 0;
+              border-bottom: 15px solid transparent;
+              border-left: 30px solid #fff;
+              border-right: 30px solid #fff;
+              border-top: 50px solid;
+            }
+
+            .flag-date-month {
+              font-family: $base-font;
+              position: absolute;
+              color: #000;
+              z-index: 999;
+              font-size: 12px;
+              top: 8px;
+              left: 0;
+              right: 0;
+              margin: auto;
+              padding: 0;
+            }
+
+            .flag-date-day {
+              font-family: $base-font;
+              position: absolute;
+              color: #000;
+              z-index: 999;
+              font-size: 25px;
+              top: 17px;
+              left: 0;
+              right: 0;
+              margin: auto;
+
+            }
+          }
+          
+
+          &-info {
+            padding-left: 40px;
+
+            .date {
+              font-family: $second-font;
+              color: #bdbdbd;
+              line-height: 1;
+              padding-bottom: 15px;
+              font-size: 18px;
+    
+              span {
+                color: #fff;
+              }
+            }
+      
+            .address {
+              font-family: $second-font;
+              color: #bdbdbd;
+              line-height: 1;
+              padding-bottom: 15px;
+              font-size: 18px;
+    
+              span {
+                color: #fff;
+              }
+            }
+      
+            .description {
+              font-family: $second-font;
+              color: #bdbdbd;
+              line-height: 1;
+              padding: 0;
+              font-size: 18px;
+    
+              span {
+                color: #fff;
+              }
+            }
+          }
+
+          
+        }
+      }
     }
   }
+  
+  // MEDIA QUERIES
+  
+  @media screen and (max-width: 1200px) {
+    #gigs-wrapper {
+      margin: 0 auto 0;
+      width: 100%;
+      font-family: $base-font;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    #gigs-wrapper {
+      margin: 0 auto 0;
+      width: 100%;
+      font-family: $base-font;
+      text-align: center;
+  
+      h1 {
+        font-size: 2.5em;
+        padding: 0 10px 40px;
+      }
+    }
+  }
+  
+
 }
+

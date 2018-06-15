@@ -1,7 +1,7 @@
 #about-container {
   color: #fff;
   font-family: $base-font;
-  width: 450px;
+  width: 600px;
   margin: 100px auto 0;
   text-align: center;
   line-height: 1;
@@ -12,23 +12,23 @@
 
   p {
     font-family: $body-font;
-    line-height: 1;
+    line-height: 1.5em;
     font-weight: 300;
     color: #bdbdbd;
-    font-size: 15px;
-    padding-top: 20px;
+    padding-top: 40px;
+    font-size: 18px;
   }
 
   img {
     width: 200px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
   }
 }
 
 // MEDIA QUERIES
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   #about-container {
     margin: -20px auto;
     width: 50%;

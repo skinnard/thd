@@ -146,7 +146,7 @@ $("a.grouped_elements").fancybox();
 //*****************************************************
 // Parallax
 //*****************************************************
-// var scene = document.getElementById('scene');
-// var parallaxInstance = new Parallax(scene);
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);
 
 }); //END OF DOC READY

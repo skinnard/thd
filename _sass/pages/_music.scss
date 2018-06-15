@@ -1,6 +1,6 @@
 // MUSIC PAGE
 #music-page {
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     height: 100%;
     margin: -20px auto;
   }
@@ -17,7 +17,7 @@
   }
 
   .music-wrapper {
-    width: 400px;
+    width: 600px;
     min-height: 400px;
     overflow: auto;
     margin: 100px auto;
@@ -38,7 +38,6 @@
       font-size: 3em;
       margin: 0;
       line-height: 1;
-      padding-bottom: 30px;
 
       @media screen and (max-width: 500px) {
         color: #fff;
@@ -52,11 +51,12 @@
     }
 
     p {
-      font-family: $second-font;
+      font-family: $body-font;
+      line-height: 1.5em;
+      font-weight: 300;
       color: #bdbdbd;
-      line-height: 1;
-      padding-bottom: 30px;
-      margin: 0 auto;
+      padding: 40px 0;
+      font-size: 18px;
 
       @media screen and (max-width: 800px) {
         width: 90%;

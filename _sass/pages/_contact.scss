@@ -1,60 +1,73 @@
-#contact-container {
-  margin: 100px auto 0;
-  width: 300px;
-  font-family: $base-font;
-  text-align: center;
 
-  h1 {
+
+.contact-page {
+  .contact-container {
+    margin: 100px auto 0;
+    width: 600px;
     font-family: $base-font;
-    font-size: 3em;
-    color: #fff;
-    line-height: 1;
-  }
-
-  p {
-    font-family: $second-font;
-    color: #bdbdbd;
-    line-height: 1;
-    padding-bottom: 30px;
-    margin: 0 auto;
-  }
-
-  #name,
-  #email,
-  #textarea,
-  #send {
-    width: 100%;
-    margin-top: 5px;
-    background-color: #000;
-    border: 1px solid #fff;
-    padding: 5px 10px 10px;
-    color: #fff;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  #contact-container {
-    margin: -53px auto 0;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #contact-container {
-    margin: 0 auto;
-    width: 90%;
-
-    h1 {
-      margin: 0 0 20px;
+    text-align: center;
+  
+    .title {
+      font-family: $base-font;
+      font-size: 3em;
+      color: #fff;
+      line-height: 1;
+      padding-bottom: 40px;
+    }
+  
+    .description {
+      font-family: $body-font;
+      line-height: 1.5em;
+      font-weight: 300;
+      color: #bdbdbd;
+      padding-bottom: 40px;
+      font-size: 18px;
+    }
+  
+    #name,
+    #email,
+    #textarea,
+    #send {
+      width: 100%;
+      margin-top: 20px;
+      background-color: rgba(0, 0, 0, 0);
+      border: 1px solid #fff;
+      padding: 5px 10px 10px;
+      color: #fff;
     }
 
-    p {
-      width: 90%;
-    }
+    #send {
+      background-color: #000;
 
-    form {
-      width: 92%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #contact-container {
+      margin: -53px auto 0;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    #contact-container {
       margin: 0 auto;
-      float: left;
+      width: 90%;
+  
+      h1 {
+        margin: 0 0 20px;
+      }
+  
+      p {
+        width: 90%;
+      }
+  
+      form {
+        width: 92%;
+        margin: 0 auto;
+        float: left;
+      }
     }
   }
+  
 }
+
