@@ -17,6 +17,7 @@ fields:
   label: Description
   name: description
 pages:
+- pages/gigs.html
 - pages/about.html
 - pages/pictures.html
 - pages/contact.html
