@@ -14,3 +14,18 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+- type: text
+  default: Venue Link
+  label: Venue Link
+  name: gig_url
+  description: The link to the venue.
+  config:
+    required: false
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Venue Address
+  name: address
+  description: The address of the venue
