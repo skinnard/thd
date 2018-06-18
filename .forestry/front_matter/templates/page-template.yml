@@ -16,3 +16,5 @@ fields:
     required: true
   label: Description
   name: description
+pages:
+- pages/music.html
