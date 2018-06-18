@@ -12,7 +12,7 @@ description: ''
             <p class="pictures-description">{{ page.description }}</p>
         {% endif %}
         <div id="pic-wrap">
-            {% for item in site.gallery %}
+            {% for item in site.pictures %}
                 <a class="grouped_elements pic-10" rel="group1" href="{{ item.picture }}">
                     <img src="{{ item.picture }}" alt="{% if item.title %}{{ item.title }}{% else %}Picture of the Handsome Devils{% endif %}" />
                 </a>
