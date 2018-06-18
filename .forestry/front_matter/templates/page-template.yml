@@ -13,7 +13,7 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-    required: true
+    required: false
   label: Description
   name: description
 pages:
