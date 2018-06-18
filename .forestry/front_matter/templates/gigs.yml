@@ -8,16 +8,19 @@ fields:
   default: Gig Title
 - type: textarea
   name: description
-  label: Description
+  label: Gig Description
   default: Gig Description
   config:
     wysiwyg: true
     schema:
       format: markdown
+    required: true
 - type: datetime
   label: Gig Date
   name: gig_date
   description: ''
+  config:
+    required: true
 - type: text
   default: Venue Link
   label: Venue Link
