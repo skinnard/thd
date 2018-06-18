@@ -17,4 +17,5 @@ fields:
   label: Description
   name: description
 pages:
+- pages/contact.html
 - pages/music.html
