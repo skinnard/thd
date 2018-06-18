@@ -5,3 +5,5 @@ fields:
 - type: file
   name: picture
   label: Picture
+pages:
+- _pictures/the-devils.md
