@@ -1,6 +1,6 @@
 // MUSIC PAGE
 .music-page {
-  padding: 0 20px;
+  padding: 0 20px 100px;
 
   button,
   input {
@@ -16,7 +16,7 @@
   .music-wrapper {
     width: 600px;
     overflow: auto;
-    margin: 100px auto;
+    margin: 100px auto 30px;
     text-align: center;
 
     @media screen and (max-width: 1200px) {

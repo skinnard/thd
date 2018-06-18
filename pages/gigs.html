@@ -3,7 +3,7 @@ title: Gigs
 permalink: gigs 
 layout: default 
 title: Upcoming Gigs 
-description: If you want to know what we sound like, kick back, press play and let the handsomeness wash over you. If you like what you hear, you can buy high quality versions from the links below. Enjoy!
+description:
 ---
 
 <!-- START Of UPCOMING GIGS PAGE -->
@@ -14,28 +14,34 @@ description: If you want to know what we sound like, kick back, press play and l
             <p>{{ page.description }}</p>
         {% endif %}
         <div class="gigs-container">
-        
-                {% for item in site.gigs %}
-                <div class="gig">
-                    <h3 class="title">
-                        <a href="{{ item.gig_url }}" target="blank">{{ item.title }}</a>
-                    </h3>
-                    <div class="gig-contents">
-                        <div class="gig-contents-flag">
-                           <p class="flag-date-month">{{ item.gig_date | date: "%B" }}</p> 
-                           <p class="flag-date-day">{{ item.gig_date | date: "%-d" }}</p> 
-                        </div>
-                        <div class="gig-contents-info">
-                            <p class="date"><span>When:</span> {{ item.gig_date | date: "%-d %B %Y" }} at {{ item.gig_date | date: "%-r" }}</p>
-                            <p class="address"><span>Where:</span> {{ item.address }}</p>
-                            {% if item.description %}
-                            <p class="description"><span>What:</span> {{ item.description }}</p>
-                            {% endif %}
-                        </div>
+
+            {% for item in site.gigs %}
+            <div class="gig">
+                <h3 class="title">
+                    <a href="{{ item.gig_url }}" target="blank">{{ item.title }}</a>
+                </h3>
+                <div class="gig-contents">
+                    <div class="gig-contents-flag">
+                        <p class="flag-date-month">{{ item.gig_date | date: "%B" }}</p> 
+                        <p class="flag-date-day">{{ item.gig_date | date: "%-d" }}</p> 
+                    </div>
+                    <div class="gig-contents-info">
+                        <p class="date"><span>When:</span> {{ item.gig_date | date: "%-d %B %Y" }} at {{ item.gig_date | date: "%-r" }}</p>
+                        <p class="address"><span>Where:</span> {{ item.address }}</p>
+                        {% if item.description %}
+                        <p class="description"><span>What:</span> {{ item.description }}</p>
+                        {% endif %}
                     </div>
                 </div>
-                {% endfor %}
-           
+            </div>
+
+            {% endfor %}
+            
+            {% unless site.gigs.first.collection %}
+                <p>No upcoming gigs at this time. Please check back later!</p>
+            {% endunless %}
+
+
         </div>
     </div>
 </div>
