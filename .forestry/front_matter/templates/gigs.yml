@@ -36,3 +36,5 @@ fields:
   label: Venue Address
   name: address
   description: The address of the venue
+pages:
+- _gigs/hamilton-yacht-club.md
