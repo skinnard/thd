@@ -5,5 +5,3 @@ fields:
 - type: file
   name: picture
   label: Picture
-pages:
-- _gallery/test.md
