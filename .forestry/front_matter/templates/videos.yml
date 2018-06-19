@@ -8,4 +8,5 @@ fields:
   description: Paste youtube link in http://embedresponsively.com/ then paste the
     link here.
 pages:
+- _videos/honey-lets-go.md
 - _videos/one-more-record-on.md
