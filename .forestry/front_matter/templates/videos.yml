@@ -1,0 +1,9 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: video_url
+  label: Video URL
+  description: Paste youtube link in http://embedresponsively.com/ then paste the
+    link here.
