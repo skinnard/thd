@@ -25,7 +25,7 @@ description: ''
                         <p class="flag-date-day">{{ item.gig_date | date: "%-d" }}</p> 
                     </div>
                     <div class="gig-contents-info">
-                        <p class="date"><span>When:</span> {{ item.gig_date | date: "%-d %B %Y" }} at {{ item.gig_date | date: "%-r" }}</p>
+                        <p class="date"><span>When:</span> {{ item.gig_date | date: "%-d %B %Y" }} at {{ item.gig_date | date: "%I" }}:{{ item.gig_date | date: "%M %p" }}</p>
                         <p class="address"><span>Where:</span> {{ item.address }}</p>
                         {% if item.description != '' %}
                             <p class="description"><span>What:</span> {{ item.description }}</p>
