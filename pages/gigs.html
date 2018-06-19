@@ -27,8 +27,8 @@ description: ''
                     <div class="gig-contents-info">
                         <p class="date"><span>When:</span> {{ item.gig_date | date: "%-d %B %Y" }} at {{ item.gig_date | date: "%-r" }}</p>
                         <p class="address"><span>Where:</span> {{ item.address }}</p>
-                        {% if item.description %}
-                        <p class="description"><span>What:</span> {{ item.description }}</p>
+                        {% if item.description != '' %}
+                            <p class="description"><span>What:</span> {{ item.description }}</p>
                         {% endif %}
                     </div>
                 </div>
