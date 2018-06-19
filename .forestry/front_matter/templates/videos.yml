@@ -7,5 +7,3 @@ fields:
   label: Video URL
   description: Paste youtube link in http://embedresponsively.com/ then paste the
     link here.
-pages:
-- _videos/test.md
