@@ -6,5 +6,4 @@ video_url: "<style>.embed-container { position: relative; padding-bottom: 56.25%
   object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%;
   height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/TvnYmWpD_T8'
   frameborder='0' allowfullscreen></iframe></div>"
-published: false
 ---
