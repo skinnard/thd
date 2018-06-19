@@ -36,5 +36,8 @@ fields:
   label: Venue Address
   name: address
   description: The address of the venue
+- type: file
+  name: gig_poster
+  label: Gig Poster
 pages:
 - _gigs/hamilton-yacht-club.md
