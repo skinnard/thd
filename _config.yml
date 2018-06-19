@@ -12,3 +12,5 @@ collections:
   - gigs
   - pictures
   - videos
+
+timezone: America/New_York
