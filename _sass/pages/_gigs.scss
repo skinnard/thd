@@ -178,8 +178,16 @@
               }
             }
           }
+        }
 
-          
+        .gig-poster {
+          padding-top: 30px;
+
+          a {
+            img {
+              width: 100%;
+            }
+          }
         }
       }
     }

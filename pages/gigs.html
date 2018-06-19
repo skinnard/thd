@@ -31,7 +31,15 @@ description: ''
                             <p class="description"><span>What:</span> {{ item.description }}</p>
                         {% endif %}
                     </div>
+                    
                 </div>
+                {% if item.gig_poster != '' %}
+                <div class="gig-poster">
+                    <a class="grouped_elements pic-10" rel="group1" href="{{ item.gig_poster }}">
+                        <img src="{{ item.gig_poster }}" alt="{{ item.title }} - Gig Poster" />
+                    </a>
+                </div>
+                {% endif %}
             </div>
 
             {% endfor %}
