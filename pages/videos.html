@@ -8,10 +8,10 @@ description: ''
 <div class="videos-page">
     <div class="videos-wrapper" class="section">
         <h1 class="videos-title">{{ page.title }}</h1>
-        {% if page.description %}
+        {% if page.description != '' %}
             <p class="videos-description">{{ page.description }}</p>
         {% endif %}
-        <div id="videos--wrap">
+        <div class="videos-wrap">
             {% for item in site.videos %}
                 <div class="video">{{ item.video_url }}</div>
             {% endfor %}
