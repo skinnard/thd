@@ -6,4 +6,5 @@ fields:
   name: picture
   label: Picture
 pages:
+- _pictures/coole-pic.md
 - _pictures/the-devils.md

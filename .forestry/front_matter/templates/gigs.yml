@@ -14,7 +14,7 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-    required: true
+    required: false
 - type: datetime
   label: Gig Date
   name: gig_date
@@ -36,3 +36,5 @@ fields:
   label: Venue Address
   name: address
   description: The address of the venue
+pages:
+- _gigs/hamilton-yacht-club.md
