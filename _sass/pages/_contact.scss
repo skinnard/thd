@@ -55,15 +55,11 @@
     }
   }
   
-  @media screen and (max-width: 1200px) {
-    .contact-container {
-      margin: 0 auto;
-    }
-  }
+
   
   @media screen and (max-width: 500px) {
     .contact-container {
-      margin: 0 auto;
+      
       width: 90%;
   
       h1 {
@@ -75,9 +71,9 @@
       }
   
       form {
-        width: 92%;
-        margin: 0 auto;
-        float: left;
+        // width: 92%;
+        // margin: 0 auto;
+        // float: left;
       }
     }
   }
