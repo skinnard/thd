@@ -2,8 +2,7 @@
 title: The Handsome Devils
 email: glenrhodges@gmail.com
 description: The official website for the most rockin’, badass, hootin’, hollerin’, drinkin’, fightin’, lovin’ sons o’ bitches known as The Handsome Devils.
-#baseurl: "/thd"
-url: "http://thehandsomedevils.ca"
+# url: "http://thehandsomedevils.ca"
 
 # Build settings
 markdown: kramdown
