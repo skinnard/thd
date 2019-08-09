@@ -1,6 +1,6 @@
 ---
+label: page-template
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: title
@@ -17,9 +17,9 @@ fields:
   label: Description
   name: description
 pages:
-- pages/videos.html
 - pages/gigs.html
+- pages/contact.html
 - pages/about.html
 - pages/pictures.html
-- pages/contact.html
+- pages/videos.html
 - pages/music.html
